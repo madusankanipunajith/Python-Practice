@@ -1,16 +1,18 @@
-# This is a sample Python script.
+# Variables
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+name = "Madusanka Nipunajith"
+age = 25
+male = True
 
+print("My name is ", name);
+print("My age is ", int(age))
+print("Hello world")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Inputs
+name = input("Your name ? ")
+age = input("Your age ? ")
+color = input("Your color ? ")
 
+print(name + " is "+ age +" years old. He likes "+color)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# String
