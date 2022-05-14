@@ -37,3 +37,23 @@ print(course[0:])
 # Including first index and excluding last index
 print(course[1:3])
 print(course[:5])
+
+# Format method
+first = "Madusanka"
+last = "Nipunajith"
+msg = f'{first} {last} is a software engineer'
+print(msg)
+
+# String method [len(), upper(), lower(), find()]
+message = "Madusanka Nipunajith is a software engineer"
+print(len(message))
+print(message.upper())
+print(message.lower())
+# index of the first occurrence
+print(message.find('M'))
+print(message.find("software"))
+new_message = message.replace("software", "civil")
+print(new_message)
+print(message.title())
+
+
