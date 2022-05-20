@@ -1,0 +1,10 @@
+Actually while we were implementing the web application we focused on the code of ethics as well. some of them are
+in this slide as well.
+Actually this project is a huge contribution to the people who are suffering from their child's addiction on games
+Also we identified some harms such as man in the middle attacks. therefor we used https to this website. Hence the
+communication protocol is secure. malicious users can't access to the communication
+And also under be fair we can say that every person who knows either english or Sinhala can use this application eually
+since we manage language translating functionality in the application.
+Furthermore, we respect users privacy and protect user's sensitive data since we can use encryption mechanism and
+also we can manage database privileges here
+Finally as the computing professionals we protect confidentiality of the users' data
