@@ -1,0 +1,53 @@
+PYTHON COLLECTION
+
+# 1-D Lists
+List = [10,50,60,20]
+
+List.append(10)
+List.remove(20)
+del List[2]
+
+#2-D Lists
+List = [[1,1,1], [2,2,2], [3,3,3]]
+
+print(List[1][1])
+List[1].append(10)
+List[1].remove(2)
+
+# Operations on List
+List = [100,34,56,78,90]
+
+1) len(List) -> length of the List
+2) a = [1,2,3] b = [5,6,7]
+   a+b -> [1,2,3,5,6,7] -> concatination of two Lists
+3) List2 = List*4 -> repetition
+4) 90 in List -> membership
+5) for i in List : print(x) -> iteration
+
+# Indexing and Slicing
+List = ['a', 'b', 'c']
+
+L[0] -> 'a', L[-1] -> 'c'
+L[1:] -> ['b','c'] 
+
+LOOPS & ITERATIONS
+
+List = list(range(10)) -> [0,1,...,9]
+List_2 = list(range(1,10,2)) -> [1,3,5,7,9]
+nested loops can be there
+break, continue, pass
+
+ERRORS
+
+Syntax Errors -> errors in language's syntaxes
+
+Runtime Errors -> errors happened when the program is executing [NameError, IndexError, TypeError, ValueError, ImportError]
+NameError -> name 'num' is not defined
+IndexError -> list index in out of range
+TypeError -> can only concatinate 'str' to 'str' not 'int'
+ValeError -> invalid literal for int() with base 10: hello
+ImportError -> module not found error
+
+try/except is used to handle runtime errors
+
+Logical Errors -> errors in logical domain
