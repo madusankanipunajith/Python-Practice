@@ -40,6 +40,22 @@ class Item:
     def calc_total_price(self):
         return self.__price * self.quantity
 
+    # hiding methods from user
+    def __send(self):
+        pass
+
+    def __prepare_body(self):
+        return f'Hello madusanka. We have {self.__name} {self.quantity} times' \
+               f'Regards, peter'
+
+    def __connect(self):
+        pass
+
+    def send_email(self):
+        self.__connect()
+        self.__prepare_body()
+        self.__send()
+
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.__name}', {self.__price}, {self.quantity})"
 
@@ -50,4 +66,3 @@ item1.apply_discount()
 print(item1.price)
 item1.apply_increment(0.2)
 print(item1.price)
-
