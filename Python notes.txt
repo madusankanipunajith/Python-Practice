@@ -51,3 +51,24 @@ ImportError -> module not found error
 try/except is used to handle runtime errors
 
 Logical Errors -> errors in logical domain
+
+FILE HANDLING
+
+fhandler = open('my_text.txt', 'r/w/r+')
+fcontent = fhandle.read() print(fcontent)
+fhandle.readlne() -> read the file line by line
+fhandle.write(my_string) my_string = 'Hello world\nI love this world'
+fhandle.close()
+
+
+STRINGS
+
+sclice -> string[0:2]
+len(string)
++ -> used to concatination
+* -> used to repetetion
+string[-1] -> return the last character
+string[-2:] -> return the last 2 characters
+string[:-2] -> return everything except last 2 characters
+
+
