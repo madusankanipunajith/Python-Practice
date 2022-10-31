@@ -40,29 +40,38 @@ class Item:
     def calc_total_price(self):
         return self.__price * self.quantity
 
-    # hiding methods from user
-    def __send(self):
-        pass
-
-    def __prepare_body(self):
-        return f'Hello madusanka. We have {self.__name} {self.quantity} times' \
-               f'Regards, peter'
-
-    def __connect(self, smpt_server):
-        pass
-
-    def send_email(self):
-        self.__connect(5000)
-        self.__prepare_body()
-        self.__send()
-
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.__name}', {self.__price}, {self.quantity})"
 
 
-item1 = Item("myItem", 200, 6)
-print(item1.price)
-item1.apply_discount()
-print(item1.price)
-item1.apply_increment(0.2)
-print(item1.price)
+class Phone(Item):
+    all = []
+
+    def __init__(self, name: str, price: float, quantity: int = 0, broken_phone: int = 0):
+        super().__init__(
+            name, price, quantity
+        )
+        assert broken_phone >= 0, f'Broken Phones {broken_phone} is not gte to zero'
+
+        self.broken_phone = broken_phone
+
+        Phone.all.append(self)
+
+
+class Keyboard(Item):
+    pay_rate = 0.8
+
+    def __init__(self, name: str, price: float, quantity: int = 0):
+        super().__init__(
+            name, price, quantity
+        )
+
+
+phone01 = Phone('Etel', 2000, 20)
+keyboard01 = Keyboard('Logitech', 2000, 6)
+phone01.apply_discount()
+print(phone01.price)
+keyboard01.apply_discount()
+# This is not change since we have used Item.pay_rate. but if we have used self.pay_rate
+# this will be changed
+print(keyboard01.price)
