@@ -50,7 +50,7 @@ print(names[:len(names)])
 print(sorted(names))
 print(names)
 
-# dictionary
+# dictionary => key value pairs
 dog = {"name": "Roger", "age": 10, "gender": "male", "color": "black"}
 dog_copy = dog.copy()
 print(dog_copy)
@@ -70,6 +70,16 @@ print(dog)
 del dog["food"]
 print(dog)
 
-# sets
+# sets => mutable but not duplicates. {} is used. order is managed automatically
+
+set1 = {"Madusanka", "Nipunajith"}
+set2 = {"Roger", "Alex", "Madusanka"}
+
+mod = set1 | set2  # union
+mod2 = set1 > set2  # comparison
+print(mod)
+print(mod2)
+print(list(set1))
+print(len(set1))
 
 
