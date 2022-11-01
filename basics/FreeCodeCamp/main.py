@@ -30,7 +30,7 @@ def check_win(player, computer):
         return [player, computer]
 
 
-choices = get_choice()
+choices = get_choice()  # assume user chooses rock only
 result = check_win(choices["player"], choices["computer"])
 print(result)
 # print(choices)
