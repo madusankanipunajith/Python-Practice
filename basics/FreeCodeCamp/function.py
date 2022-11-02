@@ -47,14 +47,30 @@ talk("Hello My name is Madusanka")
 def count():
     counts: int = 0
 
-    def increment():
+    def incr():
         nonlocal counts
         counts+=1
         print(counts)
 
-    increment()
+    incr()
 
 
 count()
 
 
+# closure => very important when user deals with nested functions
+def counter():
+    counts = 0
+
+    def incr():
+        nonlocal counts
+        counts+= 1
+        return counts
+
+    return incr
+
+
+increment = counter()
+print(increment())
+print(increment())
+print(increment())

@@ -81,5 +81,10 @@ print(mod)
 print(mod2)
 print(list(set1))
 print(len(set1))
+set1.add("ABC")
+print(set1)
+
+
+
 
 
