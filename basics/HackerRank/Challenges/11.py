@@ -24,4 +24,8 @@ def solve(s):
 
     return output.strip()
 
+
 # merge_the_tools('AABCAAADA', 3)
+
+result = solve("madusanka nipunajith")
+print(result)
